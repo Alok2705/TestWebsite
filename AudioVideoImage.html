@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio, Video and Image Tags</title>
+</head>
+<body>
+
+    <h1>ChiPi Technologies Private Limited</h1>
+    <p>
+            <a href = "./index.html">Home Page</a>
+    </p>
+
+    <p>Building Careers with Real-World Skills in Front-End Development</p>
+
+    <h2>Our Courses</h2>
+    <ul>
+        <li>HTML, CSS and JavaScript</li>
+        <li>Java and Spring Boot</li>
+        <li>Python and Django</li>
+        <li>DBMS and SQL</li>
+    </ul>
+
+    <h2>Multimedia and Image Mapping Examples</h2>
+
+    <h3>&lt;img&gt; - Image Tag</h3>
+    <img src="logo.png" alt="Company Logo" width="180">
+
+    <h3>&lt;map&gt; - Image</h3>
+
+    <img src="banner.jpg" alt="Banner" usemap="#bannerMap" width="800">
+
+    <map name="bannerMap">
+        <area shape="rect" coords="0,0,400,400"
+              href="https://www.google.com" alt="Google">
+        <area shape="rect" coords="400,0,800,400"
+              href="https://www.youtube.com" alt="YouTube">
+    </map>
+
+    <h3>&lt;audio&gt; - Audio Playback</h3>
+
+    <p>ChiPi's HTML course introduction audio:</p>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <h3>&lt;video&gt; - Video</h3>
+
+    <p>ChiPi Technologies student testimonial video:</p>
+
+    <video width="500" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datalist Example</title>
+</head>
+<body>
+
+    <h2>Select Your City</h2>
+    <p>
+            <a href = "./index.html">Home Page</a>
+    </p>
+
+    <form>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" list="cities">
+
+        <datalist id="cities">
+            <option value="Delhi">
+            <option value="Mumbai">
+            <option value="Kolkata">
+            <option value="Chennai">
+            <option value="Bengaluru">
+            <option value="Patna">
+        </datalist>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

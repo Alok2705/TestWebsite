@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Input Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        .form-group {
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+
+        .value-display {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <p>
+            <a href = "./index.html">Home Page</a>
+    </p>
+
+    <div class="form-group">
+        <label for="volume">Volume Level</label>
+
+        <input
+            type="range"
+            id="volume"
+            name="volume"
+            min="0"
+            max="100"
+            value="50"
+            oninput="rangeValue.textContent=this.value">
+
+        <div class="value-display">
+            Selected Value: <span id="rangeValue">50</span>
+        </div>
+    </div>
+
+</body>
+</html>
