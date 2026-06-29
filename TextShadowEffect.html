@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Shadow Effects</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1{
+            margin-bottom: 30px;
+        }
+
+        /* Basic Shadow */
+        .basic{
+            font-size: 40px;
+            color: blue;
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        /* Glow Effect */
+        .glow{
+            font-size: 40px;
+            color: white;
+            text-shadow: 0 0 10px blue,
+                         0 0 20px blue,
+                         0 0 30px blue;
+        }
+
+        /* 3D Effect */
+        .threeD{
+            font-size: 40px;
+            color: crimson;
+            text-shadow: 2px 2px 0 gray,
+                         4px 4px 0 black;
+        }
+
+        /* Neon Effect */
+        .neon{
+            font-size: 40px;
+            color: cyan;
+            text-shadow: 0 0 5px cyan,
+                         0 0 10px cyan,
+                         0 0 20px cyan,
+                         0 0 40px cyan;
+        }
+
+        /* Soft Shadow */
+        .soft{
+            font-size: 40px;
+            color: darkgreen;
+            text-shadow: 1px 1px 3px lightgray;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <h1>CSS Text Shadow Effects</h1>
+
+    <p class="basic">Basic Shadow</p>
+
+    <div style="background:black; padding:20px; margin:20px;">
+        <p class="glow">Glow Effect</p>
+    </div>
+
+    <p class="threeD">3D Text Effect</p>
+
+    <div style="background:black; padding:20px; margin:20px;">
+        <p class="neon">Neon Text</p>
+    </div>
+
+    <p class="soft">Soft Shadow Effect</p>
+
+</body>
+</html>

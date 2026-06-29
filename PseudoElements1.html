@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* ::details-content */
+        details::details-content {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-left: 4px solid blue;
+        }
+
+        /* ::file-selector-button */
+        input[type="file"]::file-selector-button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="file"]::file-selector-button:hover {
+            background-color: darkblue;
+        }
+
+        /* ::placeholder */
+        input::placeholder {
+            color: gray;
+            font-style: italic;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <h1>Pseudo-Elements Example</h1>
+
+    <!-- Details -->
+    <details>
+        <summary>Click to View Details</summary>
+        <p>
+            This content is displayed when the details element is expanded.
+        </p>
+    </details>
+
+    <br>
+
+    <!-- File Input -->
+    <label>Select a File:</label><br><br>
+    <input type="file">
+
+    <br><br>
+
+    <!-- Placeholder -->
+    <label>Name:</label><br><br>
+    <input type="text" placeholder="Enter your name">
+
+</body>
+</html>

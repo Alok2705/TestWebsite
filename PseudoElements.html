@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        /* First Line */
+        p::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* First Letter */
+        p::first-letter {
+            font-size: 40px;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Selection */
+        ::selection {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <h1>Pseudo-Elements Example</h1>
+
+    <p>
+        Cascading Style Sheets (CSS) is used to style HTML documents.
+        It allows you to control colors, fonts, spacing, layouts, and
+        many other visual aspects of a webpage. CSS makes websites
+        attractive, responsive, and easy to maintain.
+    </p>
+
+    <p>
+        Select any part of this paragraph using your mouse.
+        The selected text will have a yellow background and black text.
+    </p>
+
+</body>
+</html>

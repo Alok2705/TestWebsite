@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::before, ::after & ::marker Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        /* ::before */
+        h2::before {
+            content: "★ ";
+            color: red;
+        }
+
+        /* ::after */
+        h2::after {
+            content: " ✔";
+            color: green;
+        }
+
+        /* ::marker */
+        li::marker {
+            color: blue;
+            font-size: 20px;
+        }
+
+        ul {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <h2>CSS Pseudo-Elements</h2>
+
+    <p>
+        The heading above uses <strong>::before</strong> and
+        <strong>::after</strong> to add symbols without changing the HTML.
+    </p>
+
+    <h3>Topics</h3>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+
+</body>
+</html>

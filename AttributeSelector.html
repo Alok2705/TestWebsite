@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector Example</title>
+
+    <style>
+        /* Select all input elements with type="text" */
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 8px;
+        }
+
+        /* Select all input elements with type="password" */
+        input[type="password"] {
+            border: 2px solid red;
+            padding: 8px;
+        }
+
+        /* Select links with target="_blank" */
+        a[target="_blank"] {
+            color: green;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Select button with disabled attribute */
+        button[disabled] {
+            background-color: gray;
+            color: white;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <h1>Attribute Selector Example</h1>
+
+    <input type="text" placeholder="Enter your name">
+    <br><br>
+
+    <input type="password" placeholder="Enter your password">
+    <br><br>
+
+    <a href="https://example.com" target="_blank">Open in New Tab</a>
+    <br><br>
+
+    <button>Submit</button>
+
+    <button disabled>Disabled Button</button>
+
+</body>
+</html>

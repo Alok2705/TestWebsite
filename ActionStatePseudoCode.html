@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action/State Pseudo-Class Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Hover */
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        /* Active */
+        button:active {
+            background-color: red;
+        }
+
+        /* Focus */
+        input:focus {
+            border: 2px solid green;
+            outline: none;
+            background-color: #f0fff0;
+        }
+
+        /* Visited */
+        a:visited {
+            color: purple;
+        }
+
+        /* Link (before visiting) */
+        a:link {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <h1>Action/State Pseudo-Class Example</h1>
+
+    <input type="text" placeholder="Click here to focus">
+
+    <br><br>
+
+    <button>Hover and Click Me</button>
+
+    <br><br>
+
+    <a href="https://www.google.com" target="_blank">
+        Visit Google
+    </a>
+
+</body>
+</html>

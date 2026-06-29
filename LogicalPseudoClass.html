@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Pseudo-Class Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* :is() */
+        :is(h1, h2) {
+            color: blue;
+            text-align: center;
+        }
+
+        /* :not() */
+        p:not(.special) {
+            color: red;
+        }
+
+        /* :where() */
+        :where(section) {
+            border: 2px solid green;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* :has() */
+        div:has(button) {
+            background-color: #fff3cd;
+            padding: 15px;
+            border: 2px solid orange;
+            margin-top: 20px;
+        }
+
+        .special {
+            color: purple;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <h1>Logical Pseudo-Classes</h1>
+
+    <h2>CSS Example</h2>
+
+    <p>This paragraph is selected by :not().</p>
+
+    <p class="special">
+        This paragraph is NOT selected by :not().
+    </p>
+
+    <section>
+        <p>This section is styled using :where().</p>
+    </section>
+
+    <div>
+        <p>This div contains a button.</p>
+        <button>Click Me</button>
+    </div>
+
+    <div>
+        <p>This div has no button.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector Example</title>
+
+    <style>
+        /* Child Selector */
+        .container > p{
+            color: blue;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .container > h2{
+            color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <div class="container">
+
+        <h2>CSS Child Selector</h2>
+
+        <p>This is a direct child paragraph.</p>
+
+        <div class="box">
+            <p>This paragraph is inside .box, so it is NOT styled.</p>
+        </div>
+
+        <p>This is another direct child paragraph.</p>
+
+    </div>
+
+    <p>This paragraph is outside the container.</p>
+
+</body>
+</html>

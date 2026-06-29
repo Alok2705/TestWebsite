@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: navy;
+        }
+
+        .box {
+            width: 350px;
+            padding: 15px;
+            margin: 20px auto;
+            background-color: white;
+        }
+
+        /* Border Shorthand */
+        .shorthand {
+            border: 3px solid blue;
+        }
+
+        /* Border Longhand */
+        .longhand {
+            border-width: 4px;
+            border-style: dashed;
+            border-color: red;
+        }
+
+        /* Different Border Styles */
+        .dotted {
+            border: 3px dotted green;
+        }
+
+        .dashed {
+            border: 3px dashed orange;
+        }
+
+        .solid {
+            border: 3px solid black;
+        }
+
+        .double {
+            border: 5px double purple;
+        }
+
+        .groove {
+            border: 6px groove brown;
+        }
+
+        .ridge {
+            border: 6px ridge teal;
+        }
+
+        .inset {
+            border: 6px inset gray;
+        }
+
+        .outset {
+            border: 6px outset crimson;
+        }
+    </style>
+</head>
+<body>
+     <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+
+    <h1>CSS Border Properties</h1>
+
+    <div class="box shorthand">
+        <strong>Border Shorthand</strong><br>
+        border: 3px solid blue;
+    </div>
+
+    <div class="box longhand">
+        <strong>Border Longhand</strong><br>
+        border-width, border-style, border-color
+    </div>
+
+    <div class="box dotted">Dotted Border</div>
+
+    <div class="box dashed">Dashed Border</div>
+
+    <div class="box solid">Solid Border</div>
+
+    <div class="box double">Double Border</div>
+
+    <div class="box groove">Groove Border</div>
+
+    <div class="box ridge">Ridge Border</div>
+
+    <div class="box inset">Inset Border</div>
+
+    <div class="box outset">Outset Border</div>
+
+</body>
+</html>

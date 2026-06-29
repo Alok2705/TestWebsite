@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparency vs Opacity</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .box {
+            width: 300px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Transparency using RGBA */
+        .transparent {
+            background-color: rgba(0, 0, 255, 0.5);
+        }
+
+        /* Opacity */
+        .opacity {
+            background-color: blue;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+     <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+
+    <h1>Transparency vs Opacity</h1>
+
+    <div class="box transparent">
+        <h3>Transparency (RGBA)</h3>
+        <p>
+            Only the background is transparent.
+            The text remains fully visible.
+        </p>
+    </div>
+
+    <div class="box opacity">
+        <h3>Opacity</h3>
+        <p>
+            The entire element, including the text,
+            becomes transparent.
+        </p>
+    </div>
+
+</body>
+</html>

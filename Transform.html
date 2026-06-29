@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Transform Example</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.box{
+
+    width:200px;
+    height:200px;
+
+    background:orange;
+    border:3px solid black;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:25px;
+    font-weight:bold;
+
+    transition:1s;
+
+}
+
+.box:hover{
+
+    /* Try one transform at a time */
+
+    /* transform:translateX(100px); */
+
+    /* transform:translateY(100px); */
+
+    /* transform:translate(100px,50px); */
+
+    /* transform:rotate(45deg); */
+
+    /* transform:rotate(180deg); */
+
+    /* transform:scale(1.5); */
+
+    /* transform:scaleX(2); */
+
+    /* transform:scaleY(0.5); */
+
+    /* transform:skewX(30deg); */
+
+    /* transform:skewY(20deg); */
+
+    /* transform:skew(20deg,10deg); */
+
+    transform:translate(100px,50px)
+              rotate(45deg)
+              scale(1.2);
+
+}
+
+</style>
+
+</head>
+
+<body>
+     <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+
+    <div class="box">
+
+       Hover Me
+
+    </div>
+
+</body>
+</html>

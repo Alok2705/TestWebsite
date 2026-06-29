@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+
+    <style>
+        /* ==========================
+           Universal Selector
+        ========================== */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ==========================
+           Body Selector
+        ========================== */
+        body{
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* ==========================
+           Element Selector
+        ========================== */
+        h1{
+            color: darkblue;
+            text-align: center;
+        }
+
+        p{
+            color: green;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* ==========================
+           Class Selector
+        ========================== */
+        .card{
+            background-color: white;
+            border: 2px solid #333;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .highlight{
+            color: red;
+            font-weight: bold;
+        }
+
+        /* ==========================
+           ID Selector
+        ========================== */
+        #main-heading{
+            text-decoration: underline;
+        }
+
+        #special-btn{
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #special-btn:hover{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a href = "./index.html">Home page</a>
+    </p>
+
+    <!-- ID Selector -->
+    <h1 id="main-heading">CSS Selectors Example</h1>
+
+    <!-- Class Selector -->
+    <div class="card">
+
+        <!-- Element Selector -->
+        <p>This paragraph is styled using the <b>Element Selector</b>.</p>
+
+        <p class="highlight">
+            This paragraph uses the <b>Class Selector</b>.
+        </p>
+
+        <p>
+            Universal Selector applies to every element on this page.
+        </p>
+
+        <!-- ID Selector -->
+        <button id="special-btn">Click Me</button>
+
+    </div>
+
+</body>
+</html>

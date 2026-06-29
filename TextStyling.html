@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Styling</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            letter-spacing: 3px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 40px;
+            word-spacing: 5px;
+        }
+
+        .shadow-text {
+            font-size: 28px;
+            color: crimson;
+            text-shadow: 2px 2px 4px gray;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+
+    <h1>CSS Text Styling</h1>
+
+    <p>
+        CSS provides many properties to style text such as color,
+        alignment, spacing, indentation, decoration, and shadow.
+        These properties improve the readability and appearance of
+        web pages.
+    </p>
+
+    <p class="shadow-text">
+        This text uses the text-shadow property.
+    </p>
+
+    <p class="capitalize">
+        this sentence is automatically capitalized using css.
+    </p>
+
+    <p class="overline">
+        This text has an overline decoration.
+    </p>
+
+    <p class="line-through">
+        This text has a line-through decoration.
+    </p>
+
+</body>
+</html>

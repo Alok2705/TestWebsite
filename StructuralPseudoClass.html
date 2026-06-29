@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Pseudo-Classes</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* First Child */
+        li:first-child{
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Last Child */
+        li:last-child{
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* nth Child */
+        li:nth-child(2){
+            background-color: lightyellow;
+        }
+
+        /* nth Last Child */
+        li:nth-last-child(2){
+            background-color: lightgreen;
+        }
+
+        /* First of Type */
+        p:first-of-type{
+            color: purple;
+        }
+
+        /* Last of Type */
+        p:last-of-type{
+            color: darkgreen;
+        }
+
+        /* Only Child */
+        .single p:only-child{
+            color: orange;
+            font-weight: bold;
+        }
+
+        /* Empty */
+        .box:empty{
+            width: 200px;
+            height: 60px;
+            border: 2px dashed red;
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <h1>Structural Pseudo-Classes Example</h1>
+
+    <h2>List Example</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+
+    <h2>Paragraph Example</h2>
+
+    <p>First paragraph.</p>
+
+    <div>
+        <p>Second paragraph.</p>
+    </div>
+
+    <p>Last paragraph.</p>
+
+    <h2>Only Child Example</h2>
+
+    <div class="single">
+        <p>I am the only child.</p>
+    </div>
+
+    <h2>Empty Example</h2>
+
+    <div class="box"></div>
+
+</body>
+</html>

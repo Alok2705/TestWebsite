@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS z-index Example</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:#f2f2f2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+
+}
+
+.container{
+
+    width:500px;
+
+    height:350px;
+
+    border:3px solid black;
+
+    position:relative;
+
+    background:white;
+
+}
+
+.box{
+
+    width:180px;
+
+    height:180px;
+
+    color:white;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:absolute;
+
+}
+
+/* Red Box */
+
+.box1{
+
+    background:red;
+
+    top:20px;
+
+    left:20px;
+
+    z-index:1;
+
+}
+
+/* Green Box */
+
+.box2{
+
+    background:green;
+
+    top:70px;
+
+    left:90px;
+
+    z-index:2;
+
+}
+
+/* Blue Box */
+
+.box3{
+
+    background:blue;
+
+    top:120px;
+
+    left:160px;
+
+    z-index:3;
+
+}
+
+</style>
+
+</head>
+
+<body>
+     <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+
+    <div class="container">
+
+       <div class="box box1">1</div>
+
+       <div class="box box2">2</div>
+
+       <div class="box box3">3</div>
+
+    </div>
+
+</body>
+
+</html>

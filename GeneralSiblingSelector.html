@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector Example</title>
+
+    <style>
+        /* General Sibling Selector */
+        h2 ~ p {
+            color: blue;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <h1>General Sibling Selector (~)</h1>
+
+    <p>This paragraph is before the h2, so it is NOT styled.</p>
+
+    <h2>Heading</h2>
+
+    <p>This paragraph is a sibling after h2.</p>
+
+    <div>
+        <p>This paragraph is inside a div, so it is NOT a sibling of h2.</p>
+    </div>
+
+    <p>This is another sibling paragraph after h2.</p>
+
+    <p>This is also a sibling paragraph after h2.</p>
+
+</body>
+</html>

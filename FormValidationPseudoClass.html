@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Pseudo-Classes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        input {
+            display: block;
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Required Field */
+        input:required {
+            border: 2px solid blue;
+        }
+
+        /* Optional Field */
+        input:optional {
+            border: 2px solid gray;
+        }
+
+        /* Valid Input */
+        input:valid {
+            background-color: #d4edda;
+        }
+
+        /* Invalid Input */
+        input:invalid {
+            background-color: #f8d7da;
+        }
+
+        /* Readonly Input */
+        input:read-only {
+            background-color: #e9ecef;
+            color: #555;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+    <h1>Form Validation Pseudo-Classes</h1>
+
+    <!-- Required Field -->
+    <label>Name (Required)</label>
+    <input type="text" required placeholder="Enter your name">
+
+    <!-- Email Validation -->
+    <label>Email (Required)</label>
+    <input type="email" required placeholder="Enter your email">
+
+    <!-- Optional Field -->
+    <label>Phone (Optional)</label>
+    <input type="tel" placeholder="Enter your phone number">
+
+    <!-- Readonly Field -->
+    <label>Country (Readonly)</label>
+    <input type="text" value="India" readonly>
+
+</body>
+</html>

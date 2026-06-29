@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Query Example</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:#f2f2f2;
+
+}
+
+.container{
+
+    width:90%;
+
+    margin:30px auto;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.box{
+
+    flex:1;
+
+    height:200px;
+
+    background:orange;
+
+    border:3px solid black;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+/* ============================= */
+/* Desktop (Default)             */
+/* ============================= */
+
+body{
+
+    background:#f2f2f2;
+
+}
+
+/* ============================= */
+/* Tablet                        */
+/* ============================= */
+
+@media (max-width:992px){
+
+body{
+
+    background:lightblue;
+
+}
+
+.container{
+
+    flex-wrap:wrap;
+
+}
+
+.box{
+
+    flex:1 1 45%;
+
+}
+
+}
+
+/* ============================= */
+/* Mobile                        */
+/* ============================= */
+
+@media (max-width:768px){
+
+body{
+
+    background:lightgreen;
+
+}
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.box{
+
+    width:100%;
+
+}
+
+}
+
+/* ============================= */
+/* Small Mobile                  */
+/* ============================= */
+
+@media (max-width:480px){
+
+body{
+
+    background:lightpink;
+
+}
+
+.box{
+
+    height:120px;
+
+    font-size:22px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+     <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+
+     <div class="container">
+
+         <div class="box">1</div>
+
+         <div class="box">2</div>
+
+         <div class="box">3</div>
+
+     </div>
+
+</body>
+</html>

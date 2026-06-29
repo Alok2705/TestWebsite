@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property Example</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial;
+            padding:20px;
+        }
+
+        h2{
+            margin:20px 0 10px;
+        }
+
+        .box{
+            background-color:orange;
+            border:2px solid black;
+            padding:20px;
+            margin:10px;
+        }
+
+        /* Block */
+        .block{
+            display:block;
+        }
+
+        /* Inline */
+        .inline{
+            display:inline;
+            background-color:yellow;
+        }
+
+        /* Inline Block */
+        .inline-block{
+            display:inline-block;
+            width:120px;
+            height:80px;
+            background-color:lightgreen;
+        }
+
+        /* None */
+        .none{
+            display:none;
+        }
+
+        /* Flex */
+        .flex-container{
+            display:flex;
+            gap:15px;
+            border:2px solid black;
+            padding:10px;
+            margin-top:10px;
+        }
+
+        .flex-item{
+            width:100px;
+            height:100px;
+            background-color:skyblue;
+            border:2px solid black;
+            text-align:center;
+            line-height:100px;
+        }
+
+        /* Grid */
+        .grid-container{
+            display:grid;
+            grid-template-columns:repeat(3,100px);
+            gap:15px;
+            margin-top:10px;
+        }
+
+        .grid-item{
+            height:100px;
+            background-color:pink;
+            border:2px solid black;
+            text-align:center;
+            line-height:100px;
+        }
+
+    </style>
+
+</head>
+<body>
+     <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+
+    <h2>1. display: block;</h2>
+
+    <div class="box block">Block 1</div>
+    <div class="box block">Block 2</div>
+
+
+    <h2>2. display: inline;</h2>
+
+    <span class="inline">HTML</span>
+    <span class="inline">CSS</span>
+    <span class="inline">JavaScript</span>
+
+
+    <h2>3. display: inline-block;</h2>
+
+    <div class="box inline-block">Box 1</div>
+    <div class="box inline-block">Box 2</div>
+    <div class="box inline-block">Box 3</div>
+
+
+    <h2>4. display: none;</h2>
+
+    <div class="box">Visible Box</div>
+
+    <div class="box none">
+        You can't see me because display:none is applied.
+    </div>
+
+
+    <h2>5. display: flex;</h2>
+
+    <div class="flex-container">
+
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+
+    </div>
+
+
+    <h2>6. display: grid;</h2>
+
+    <div class="grid-container">
+
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+
+    </div>
+
+</body>
+</html>

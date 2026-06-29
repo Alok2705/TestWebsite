@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector Example</title>
+
+    <style>
+        /* Descendant Selector */
+        .container p{
+            color: blue;
+            font-size: 18px;
+        }
+
+        .container h2{
+            color: darkred;
+        }
+
+        .box span{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+
+    <div class="container">
+        <h2>Welcome to CSS</h2>
+
+        <p>This paragraph is inside the container.</p>
+
+        <div class="box">
+            <p>
+                This paragraph is also inside the container.
+                <span>This text is inside a span.</span>
+            </p>
+        </div>
+    </div>
+
+    <p>This paragraph is outside the container, so it is not blue.</p>
+
+</body>
+</html>

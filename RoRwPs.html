@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read-Only, Read-Write & Placeholder-Shown</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        input{
+            display: block;
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #333;
+        }
+
+        /* Read-Only Input */
+        input:read-only{
+            background-color: #d9d9d9;
+            color: #555;
+        }
+
+        /* Read-Write Input */
+        input:read-write{
+            background-color: #e8f5e9;
+            border-color: green;
+        }
+
+        /* Placeholder Shown */
+        input:placeholder-shown{
+            border: 2px dashed blue;
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <p>
+         <a href = "./index.html">Home Page</a>
+    </p>
+
+
+    <h1>Pseudo-Class Example</h1>
+
+    <label>Read-Only Field</label>
+    <input type="text" value="India" readonly>
+
+    <label>Read-Write Field</label>
+    <input type="text" value="Editable Text">
+
+    <label>Placeholder Example</label>
+    <input type="text" placeholder="Enter your name">
+
+</body>
+</html>
